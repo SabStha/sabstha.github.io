@@ -1,0 +1,539 @@
+{
+  "site": {
+    "baseUrl": "https://sabstha.github.io",
+    "updated": "2026-11-08"
+  },
+  "name": {
+    "en": "Sabin Shrestha",
+    "ja": "サビン・シュレスタ"
+  },
+  "role": {
+    "en": "Security Product Support",
+    "ja": "セキュリティ製品テクニカルサポート"
+  },
+  "headline": {
+    "en": "Security Product Support | AWS Cloud Infrastructure & Security Engineering",
+    "ja": "セキュリティ製品テクニカルサポート｜AWSクラウドインフラ・セキュリティ領域を学習中"
+  },
+  "intro": {
+    "en": "I support network-security products in Japan: troubleshooting, firewall-related settings, log reading and technical investigation. I am moving into AWS infrastructure engineering. My professional cloud experience is still limited, so this site shows only what I can demonstrate: what I built, how it is secured and tested, what it costs, and what is not finished yet.",
+    "ja": "日本でネットワークセキュリティ製品のテクニカルサポートを担当し、トラブルシューティング、ファイアウォール関連の設定確認、ログ調査、技術的な原因調査を行っています。現在はAWSクラウドインフラエンジニアへのキャリア転換を進めています。クラウドの実務経験はまだ限られているため、このサイトには実際に示せる成果だけを掲載しています。何を作ったか、どのように保護し検証したか、費用はいくらか、そして未完了の部分も記載しています。"
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Based in",
+        "ja": "拠点"
+      },
+      "value": {
+        "en": "Japan",
+        "ja": "日本"
+      }
+    },
+    {
+      "label": {
+        "en": "Working on",
+        "ja": "取り組み"
+      },
+      "value": {
+        "en": "AWS infrastructure → cloud security",
+        "ja": "AWSインフラ → クラウドセキュリティ"
+      }
+    },
+    {
+      "label": {
+        "en": "Looking for",
+        "ja": "希望"
+      },
+      "value": {
+        "en": "Fully remote in Japan, or hybrid in Aichi / Nagoya",
+        "ja": "日本国内フルリモート、または愛知・名古屋でのハイブリッド"
+      }
+    }
+  ],
+  "drill": {
+    "project": "cloud-career-hq",
+    "kicker": {
+      "en": "Restore drill · real AWS · Nov 2026",
+      "ja": "復元訓練・実際のAWS環境・2026年11月"
+    },
+    "title": {
+      "en": "Every offline test passed. Real AWS disagreed.",
+      "ja": "オフラインのテストは全て合格。実際のAWSでは失敗。"
+    },
+    "steps": [
+      {
+        "result": "fail",
+        "name": {
+          "en": "Save test data through the API",
+          "ja": "API経由でテストデータを保存"
+        },
+        "detail": "Unauthorized on [id]"
+      },
+      {
+        "result": "fix",
+        "name": {
+          "en": "Declare id explicitly + add an infra test",
+          "ja": "idを明示的に定義し、インフラ検証を追加"
+        }
+      },
+      {
+        "result": "pass",
+        "name": {
+          "en": "Save test data",
+          "ja": "テストデータを保存"
+        }
+      },
+      {
+        "result": "pass",
+        "name": {
+          "en": "Back up every table to S3",
+          "ja": "全テーブルをS3へバックアップ"
+        }
+      },
+      {
+        "result": "pass",
+        "name": {
+          "en": "Wipe the tables",
+          "ja": "テーブルを削除"
+        }
+      },
+      {
+        "result": "pass",
+        "name": {
+          "en": "Restore and compare",
+          "ja": "復元して比較"
+        },
+        "detail": {
+          "en": "7/7 checks",
+          "ja": "7/7 項目"
+        }
+      }
+    ],
+    "lesson": {
+      "en": "A successful backup is not proven recovery, so I test the restore on real infrastructure.",
+      "ja": "バックアップの成功は、復旧できることの証明ではありません。だからこそ、実際の環境で復元を検証します。"
+    }
+  },
+  "about": {
+    "en": [
+      "I started by building web applications: Laravel and PHP sites first, then React and Next.js apps. Running some of them on Linux servers I managed myself taught me that the hard part starts after the code works: deploys that leave stale files behind, a lost configuration file, an outage during a build, a security patch on a shared server.",
+      "My current work is technical support for network-security products. Most days are spent reading logs, checking firewall-related settings and narrowing down why something behaves the way it does. That habit of proving a cause before changing anything is what I bring to cloud work.",
+      "On AWS I build small, real systems end to end and then try to break them: a restore drill, an alarm drill, a deliberate permission failure. I write down what failed and why, because that is where most of the learning is. I use an AI coding assistant for much of the implementation, and say so on each project; I set the requirements, review the design, run the verification and operate the result."
+    ],
+    "ja": [
+      "最初はWebアプリケーションの開発から始めました。LaravelとPHPのサイト、その後ReactとNext.jsのアプリです。その一部を自分で管理するLinuxサーバーで運用するうちに、本当に難しいのはコードが動いた後だと学びました。古いファイルが残るデプロイ、設定ファイルの消失、ビルド中の障害、共有サーバーでのセキュリティパッチ対応などです。",
+      "現在はネットワークセキュリティ製品のテクニカルサポートを担当しています。ログを読み、ファイアウォール関連の設定を確認し、事象の原因を絞り込むのが日々の仕事です。何かを変更する前に原因を確かめるという習慣は、クラウドの仕事にも生かせると考えています。",
+      "AWSでは小規模でも実際に動くシステムを一通り構築し、その後あえて壊して確かめます。復元訓練、アラーム訓練、意図的な権限エラーなどです。何がなぜ失敗したかを記録することが、最も学びの多い部分だからです。実装の多くにはAIコーディング支援を活用しており、各プロジェクトにその旨を明記しています。要件の定義、設計のレビュー、検証の実施、運用は自分で行っています。"
+    ]
+  },
+  "levels": {
+    "work": {
+      "en": "Professional work",
+      "ja": "実務"
+    },
+    "project": {
+      "en": "Hands-on projects",
+      "ja": "個人プロジェクトで実践"
+    },
+    "learning": {
+      "en": "Currently learning",
+      "ja": "学習中"
+    }
+  },
+  "skills": [
+    {
+      "area": {
+        "en": "AWS Cloud",
+        "ja": "AWSクラウド"
+      },
+      "items": [
+        {
+          "name": "AWS Amplify Gen 2 / CDK",
+          "level": "project"
+        },
+        {
+          "name": "Amazon Cognito (MFA)",
+          "level": "project"
+        },
+        {
+          "name": "AWS AppSync",
+          "level": "project"
+        },
+        {
+          "name": "Amazon DynamoDB (PITR)",
+          "level": "project"
+        },
+        {
+          "name": "AWS Lambda",
+          "level": "project"
+        },
+        {
+          "name": "Amazon S3",
+          "level": "project"
+        },
+        {
+          "name": "EventBridge Scheduler",
+          "level": "project"
+        },
+        {
+          "name": "CloudWatch / SNS / SES",
+          "level": "project"
+        },
+        {
+          "name": "AWS Budgets / Cost Explorer",
+          "level": "project"
+        },
+        {
+          "name": "API Gateway",
+          "level": "learning"
+        },
+        {
+          "name": "Amazon VPC design",
+          "level": "learning"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "Networking & Linux",
+        "ja": "ネットワーク・Linux"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Firewall-related settings",
+            "ja": "ファイアウォール関連の設定確認"
+          },
+          "level": "work"
+        },
+        {
+          "name": {
+            "en": "Network troubleshooting",
+            "ja": "ネットワークのトラブルシューティング"
+          },
+          "level": "work"
+        },
+        {
+          "name": "Linux (Ubuntu) server operations",
+          "level": "project"
+        },
+        {
+          "name": "Nginx / PM2",
+          "level": "project"
+        },
+        {
+          "name": "IPsec VPN, VLANs",
+          "level": "learning"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "Security",
+        "ja": "セキュリティ"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Security-product troubleshooting",
+            "ja": "セキュリティ製品のトラブルシューティング"
+          },
+          "level": "work"
+        },
+        {
+          "name": {
+            "en": "Log analysis & technical investigation",
+            "ja": "ログ分析・技術調査"
+          },
+          "level": "work"
+        },
+        {
+          "name": {
+            "en": "IAM least privilege",
+            "ja": "IAM最小権限"
+          },
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "Secrets in SSM Parameter Store",
+            "ja": "SSM Parameter Storeでの秘密情報管理"
+          },
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "Backup & restore drills",
+            "ja": "バックアップ・復元訓練"
+          },
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "Cloud security (AWS)",
+            "ja": "クラウドセキュリティ（AWS）"
+          },
+          "level": "learning"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "Programming & Scripting",
+        "ja": "プログラミング・スクリプト"
+      },
+      "items": [
+        {
+          "name": "TypeScript / JavaScript",
+          "level": "project"
+        },
+        {
+          "name": "PHP",
+          "level": "project"
+        },
+        {
+          "name": "SQL (PostgreSQL)",
+          "level": "project"
+        },
+        {
+          "name": "Bash / AWS CLI",
+          "level": "project"
+        },
+        {
+          "name": "Python",
+          "level": "learning"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "Infrastructure & Automation",
+        "ja": "インフラ・自動化"
+      },
+      "items": [
+        {
+          "name": "Infrastructure as code (Amplify / CDK)",
+          "level": "project"
+        },
+        {
+          "name": "GitHub Actions CI/CD",
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "Automated infrastructure tests",
+            "ja": "インフラの自動テスト"
+          },
+          "level": "project"
+        },
+        {
+          "name": "Terraform",
+          "level": "learning"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "Web Development",
+        "ja": "Web開発"
+      },
+      "items": [
+        {
+          "name": "React",
+          "level": "project"
+        },
+        {
+          "name": "Next.js",
+          "level": "project"
+        },
+        {
+          "name": "Laravel",
+          "level": "project"
+        },
+        {
+          "name": "Vite / Vitest",
+          "level": "project"
+        }
+      ]
+    },
+    {
+      "area": {
+        "en": "AI & LLM Integration",
+        "ja": "AI・LLM連携"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "OpenAI API with hard cost caps",
+            "ja": "費用上限付きのOpenAI API連携"
+          },
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "AI-assisted development (Claude Code)",
+            "ja": "AI支援開発（Claude Code）"
+          },
+          "level": "project"
+        },
+        {
+          "name": {
+            "en": "AI infrastructure security",
+            "ja": "AIインフラのセキュリティ"
+          },
+          "level": "learning"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "status": "passed"
+    },
+    {
+      "title": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services",
+      "status": "studying"
+    },
+    {
+      "title": {
+        "en": "JLPT N2 (Japanese)",
+        "ja": "日本語能力試験 N2"
+      },
+      "issuer": {
+        "en": "Japan Foundation / JEES",
+        "ja": "国際交流基金・日本国際教育支援協会"
+      },
+      "status": "passed"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-11-07",
+      "title": {
+        "en": "Cloud Career HQ deployed to AWS",
+        "ja": "Cloud Career HQをAWSへデプロイ"
+      },
+      "detail": {
+        "en": "After offline checks and on-AWS drills: cross-user 9/9, restore 7/7.",
+        "ja": "オフライン検証とAWS上の訓練（ユーザー間分離9/9、復元7/7）を経て公開。"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "title": {
+        "en": "First technical post: backup vs. proven recovery",
+        "ja": "初の技術投稿：バックアップと「実証された復旧」の違い"
+      },
+      "detail": {
+        "en": "Why S3 versioning alone is not a backup strategy.",
+        "ja": "S3のバージョニングだけではバックアップ戦略にならない理由。"
+      }
+    }
+  ],
+  "languages": [
+    {
+      "en": "Japanese — JLPT N2",
+      "ja": "日本語 — 日本語能力試験 N2"
+    },
+    {
+      "en": "English — used for technical reading and writing (no formal test score)",
+      "ja": "英語 — 技術資料の読解・文章作成に使用（公式スコアなし）"
+    }
+  ],
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sabinshrestha-sec",
+      "note": {
+        "en": "Best way to contact me",
+        "ja": "ご連絡はこちらから"
+      }
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/SabStha",
+      "note": {
+        "en": "Public repositories and lab docs",
+        "ja": "公開リポジトリ・ラボ資料"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "slug": "cloud-career-hq",
+      "confirmed": true,
+      "caseStudy": true,
+      "featured": true,
+      "diagram": "cloud-career-hq",
+      "title": {
+        "en": "Cloud Career HQ",
+        "ja": "Cloud Career HQ"
+      },
+      "kicker": {
+        "en": "Private AWS application · in production",
+        "ja": "非公開のAWSアプリケーション・本番稼働中"
+      },
+      "summary": {
+        "en": "A private career-tracking app running on AWS (Tokyo): Cognito with MFA, owner-only AppSync authorization, DynamoDB with point-in-time recovery, daily backups, alarms, a spend guard and a daily cost email. Deployed 7 Nov 2026 after offline checks and on-AWS drills; the restore drill found and fixed a real authorization bug.",
+        "ja": "AWS（東京）で稼働する非公開のキャリア管理アプリ。MFA付きCognito、所有者限定のAppSync認可、PITR有効のDynamoDB、日次バックアップ、アラーム、費用ガード、日次の費用メールを備えています。オフライン検証とAWS上の訓練を経て2026年11月7日にデプロイし、復元訓練で実際の認可の不具合を発見・修正しました。"
+      },
+      "metrics": [
+        {
+          "value": "9/9",
+          "label": {
+            "en": "cross-user tests on AWS",
+            "ja": "AWS上のユーザー間分離テスト"
+          }
+        },
+        {
+          "value": "7/7",
+          "label": {
+            "en": "restore drill checks",
+            "ja": "復元訓練のチェック項目"
+          }
+        },
+        {
+          "value": "24",
+          "label": {
+            "en": "infrastructure assertions",
+            "ja": "インフラ検証項目"
+          }
+        },
+        {
+          "value": "≈ ¥485",
+          "label": {
+            "en": "per month at list price",
+            "ja": "定価ベースの月額"
+          }
+        }
+      ],
+      "tags": [
+        "Amplify Gen 2",
+        "Cognito",
+        "AppSync",
+        "DynamoDB",
+        "Lambda",
+        "S3",
+        "CloudWatch",
+        "TypeScript"
+      ],
+      "status": {
+        "en": "Live on AWS (private) · public demo",
+        "ja": "AWSで稼働中（非公開）・デモ公開中"
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Live demo (fictional data)",
+            "ja": "デモ（架空データ）"
+          },
+          "url": "https://sabstha.github.io/cloud-career-hq-demo/"
+        }
+      ]
+    }
+  ]
+}
